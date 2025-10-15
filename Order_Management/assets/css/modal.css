@@ -1,0 +1,24 @@
+/* Modal Content Fix */
+.modal-content {
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    width: 90%;
+    max-width: 700px;   /* increased for form */
+    max-height: 90vh;   /* prevent overflow */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Make only the body scroll */
+.modal-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+/* Ensure header & footer stay fixed inside modal */
+.modal-header,
+.modal-footer {
+    flex-shrink: 0;
+    background: var(--card-bg);
+}

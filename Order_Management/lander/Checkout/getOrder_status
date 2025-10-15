@@ -1,0 +1,25 @@
+<?php
+include("../../backend/db.php");
+header('Content-Type: application/json');
+
+$orderId = isset($_GET['id']) ? intval($_GET['id']) : 0;
+if($orderId <= 0) {
+    echo json_encode(['status'=>'Pending','remaining'=>3600]);
+    exit;
+}
+
+$order = $conn->query("SELECT status FROM orders WHERE id=$orderId")->fetch_assoc();
+$status = $order['status'] ?? 'Pending';
+
+// Assign default remaining time per stage (adjust as needed)
+$timeMap = [
+    'Pending' => 3600,
+    'Accept' => 2700,
+    'Prepping' => 1800,
+    'Ready' => 900,
+    'Completed' => 0
+];
+
+$remaining = $timeMap[$status] ?? 3600;
+
+echo json_encode(['status'=>$status, 'remaining'=>$remaining]);

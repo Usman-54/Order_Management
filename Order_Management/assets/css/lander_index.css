@@ -1,0 +1,110 @@
+/* menu.css */
+
+/* General body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Heading and top section */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  flex-grow: 1;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #0B66FF;
+}
+
+#viewOrderButton {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.45rem 0.7rem;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  background: #0B66FF;
+  color: #fff;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#viewOrderButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+#viewOrderTotal {
+  background: rgba(255,255,255,0.12);
+  padding: 0.35rem 0.6rem;
+  border-radius: 14px;
+  font-weight: 700;
+}
+
+/* Cards */
+.card {
+  border-radius: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card-title {
+  font-weight: 600;
+  color: #0B66FF;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* + Button on card */
+.add-product-btn {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.add-product-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Category heading */
+h2 {
+  font-weight: 700;
+  color: #0B66FF;
+  border-bottom: 2px solid black;
+  padding-bottom: 0.3rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .page-header h1 {
+    font-size: 1.5rem;
+  }
+
+  #viewOrderButton {
+    padding: 0.35rem 0.6rem;
+    font-size: 0.9rem;
+  }
+}

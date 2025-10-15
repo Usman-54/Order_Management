@@ -1,0 +1,97 @@
+/* style.css - for login and signup pages */
+
+/* Body and layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f8;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Card styling */
+.card {
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    padding: 35px 30px;
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* Form labels and spacing */
+.form-label {
+    font-weight: 500;
+    color: #333;
+}
+
+.mb-3 {
+    margin-bottom: 1.5rem;
+}
+
+/* Inputs */
+.form-control {
+    border-radius: 8px;
+    padding: 10px 12px;
+    transition: all 0.3s ease;
+    border: 1px solid #ccc;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 8px rgba(0,123,255,0.25);
+    border-color: #007bff;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 12px;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 8px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Card headings */
+.card h3 {
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Alerts */
+.alert {
+    font-size: 0.95rem;
+    border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .card {
+        padding: 25px 20px;
+    }
+}

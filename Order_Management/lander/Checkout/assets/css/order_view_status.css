@@ -1,0 +1,46 @@
+body {
+    background: #f8f9fa;
+}
+
+.cooking-area {
+    width: 250px;
+    height: 250px;
+    margin: 30px auto;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #ddd;
+    transition: all 0.5s ease;
+}
+
+.cooking-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.progress {
+    height: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.stage-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 15px auto;
+    font-weight: 600;
+}
+
+.stage-label {
+    font-size: 0.85rem;
+}
+
+#stage-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
